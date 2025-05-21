@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PORTOFOLIO</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style2.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-primary text-white p-4">
+    <div id="nav-desktop" class="container d-flex justify-content-between align-items-center">
+      <h1>Portfolio</h1>
+      <nav class="navbar-expand-lg">
+        <ul class="navbar-nav">
+          <li class="nav-item me-5">
+            <a class="nav-link text-white nav-button" href="#home"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link text-white nav-button" href="#about"><i class="fas fa-user"></i> About</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link text-white nav-button" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home d-flex justify-content-center align-items-center text-center bg-primary" id="home"
+    style="height: 100vh; background-size: cover; background-position: center">
+    <div class="overlay">
+      <h3 class="welcome-text">Welcome to</h3>
+      <h1 class="display-4">My Portfolio</h1>
+      <h2 class="text-success">MUHAMMAD IQBAL JUNIALDI</h2>
+      <p class="lead">
+        Mahasiswa Teknik Informatika , Universitas Dian Nuswantoro
+      </p>
+      <a href="#about" class="btn btn-success btn-lg">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about d-flex justify-content-center align-items-center text-center bg-white" id="about"
+    style="height: 100vh">
+    <div class="container d-flex align-items-center porto">
+      <div class="text-section">
+        <h1 style="font-size: 36px">About Me</h1>
+
+        <p id="desc-container">
+          Saya adalah mahasiswa Teknik Informatika di Universitas Dian
+          Nuswantoro, Semarang, dengan minat yang mendalam dalam bidang
+          teknologi. Saat ini, saya sedang mempelajari bahasa pemrograman C++,
+          HTML, dan CSS. Ketertarikan saya pada dunia pemrograman mendorong
+          saya untuk terus belajar dan mengembangkan keterampilan saya, dengan
+          tujuan menjadi seorang programmer yang handal di masa depan.
+        </p>
+        <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal">Learn More</a>
+        <a href="path/to/your-cv.pdf" class="btn btn-primary" download>Download CV</a>
+      </div>
+      <div class="image-about">
+        <img src="Img/FORMAL.jpg" alt="Your Photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact mt-5" id="contact">
+    <h1 class="text-center">Contact Me</h1>
+    <div class="container justify-content-center mt-4">
+      <form class="p-4 border rounded shadow mb-20">
+        <input type="text" class="form-control mb-3" placeholder="Your Name" required />
+        <input type="email" class="form-control mb-3" placeholder="Your Email" required />
+        <textarea class="form-control mb-3" rows="4" placeholder="Message" required></textarea>
+        <button type="submit" class="d-flex justify-content-center btn btn-success">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+<!-- Modal for Contact -->
+<!-- <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class -->
+
+</html>

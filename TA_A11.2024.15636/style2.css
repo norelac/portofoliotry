@@ -1,0 +1,224 @@
+
+/* styles.css */
+
+/* Gaya Umum */
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Warna latar belakang halaman */
+  }
+  
+  /* Gaya untuk navbar */
+  .navbar {
+    background-color: #28a745; /* Warna latar belakang navbar */
+  }
+  
+  .nav-link {
+    color: white; /* Warna teks link */
+    padding: 10px 15px; /* Padding untuk link */
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(238, 233, 244, 0.2); /* Efek hover untuk link */
+    border-radius: 5px; /* Sudut membulat saat hover */
+  }
+  
+  /* Gaya untuk bagian Home */
+  .home {
+    position: relative;
+    color: white; /* Warna teks putih untuk kontras */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Bayangan teks untuk efek kedalaman */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay hitam transparan */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .welcome-text {
+    font-size: 1.5rem; /* Ukuran font untuk teks sambutan */
+    margin-bottom: 10px;
+  }
+  
+  .display-4 {
+    font-size: 3rem; /* Ukuran font untuk judul */
+    margin-bottom: 10px;
+  }
+  
+  .lead {
+    font-size: 1.25rem; /* Ukuran font untuk deskripsi */
+    margin-bottom: 20px;
+  }
+  
+  /* Gaya untuk bagian About */
+  .about {
+    /* Padding untuk bagian About */
+    background-color: #ffffff; /* Latar belakang putih untuk bagian About */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    border-radius: 10px; /* Sudut membulat */
+    display: flex; /* Menggunakan flexbox untuk layout */
+    flex-direction: row; /* Menyusun elemen secara horizontal */
+    align-items: center; /* Menyelaraskan elemen di tengah */
+  }
+  
+  .text-section {
+    margin-bottom: 70px;
+    flex: 1; /* Mengambil ruang yang tersedia */
+    padding-right: 20px; /* Ruang antara teks dan gambar */
+  }
+  
+  .about-image {
+    max-width: 100%; /* Memastikan gambar responsif */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    border-radius: 10px; /* Sudut membulat untuk gambar */
+  }
+  
+  /* Gaya untuk bagian Contact */
+  .contact {
+    padding: 60px 20px; /* Padding untuk bagian Contact */
+  }
+  
+  /* Gaya untuk form */
+  form {
+    background-color: #f8f9fa; /* Warna latar belakang form */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+  }
+  
+  /* Gaya untuk tombol */
+  .btn-success {
+    background-color: #28a745; /* Warna hijau untuk tombol sukses */
+    border: none; /* Menghapus border */
+    transition: background-color 0.3s ease; /* Transisi untuk efek hover */
+  }
+  
+  .btn-success:hover {
+    background-color: #218838; /* Warna hijau lebih gelap saat hover */
+  }
+  
+  /* Gaya untuk modal */
+  .modal-content {
+    border-radius: 8px; /* Sudut membulat untuk modal */
+  }
+  
+  /* Gaya untuk link */
+  .nav-link {
+    transition: color 0.3s ease; /* Transisi untuk efek hover pada link */
+  }
+  
+  .nav-link:hover {
+    color: #ffc107; /* Warna kuning saat hover */
+  }
+  
+  /* Gaya untuk tombol di header */
+  .btn-light {
+    transition: background-color 0.3s ease; /* Transisi untuk efek hover */
+  }
+  
+  .btn-light:hover {
+    background-color: #e2e6ea; /* Warna lebih gelap saat hover */
+  }
+  /* Gaya untuk bagian About */
+  .about {
+    padding: 60px 20px; /* Padding untuk bagian About */
+    background-color: #ffffff; /* Latar belakang putih untuk bagian About */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    border-radius: 10px; /* Sudut membulat */
+    display: flex; /* Menggunakan flexbox untuk layout */
+    flex-direction: row;
+    align-items: center; /* Menyelaraskan elemen di tengah */
+  }
+  
+  .about .image-about img {
+    width: 300px;
+    height: 340px;
+    border-radius: 50%;
+    box-shadow: 0 0 12px white;
+    margin-top: 0px;
+    box-shadow: 0 20px 30px #1a0bec;
+    margin-right: 80px;
+    margin-left: 100px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about {
+      flex-direction: column; /* Menyusun elemen secara vertikal */
+      text-align: center; /* Menyelaraskan teks ke tengah */
+    }
+  
+    .about .image-about img {
+      margin-right: 0; /* Menghapus margin kanan */
+      margin-bottom: 20px; /* Menambah margin bawah */
+    }
+    #desc-container {
+      font-size: 14px;
+    }
+    .porto {
+      flex-direction: column;
+    }
+  
+    /* saya ingin hide tag img yang ada di class porto */
+    .porto img {
+      display: none;
+    }
+  
+    .mobile-container {
+      max-width: 480px;
+      margin: auto;
+      background-color: #555;
+      height: 500px;
+      color: white;
+      border-radius: 10px;
+    }
+  
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+      position: relative;
+    }
+  
+    .topnav #myLinks {
+      display: none;
+    }
+  
+    .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+  
+    .topnav a.icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  
+    .active {
+      background-color: #04aa6d;
+      color: white;
+    }
+    .hide {
+      display: none;
+    }
+  }
+  
